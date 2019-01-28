@@ -5,3 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #managing data set
 import pandas as pd
+
+
+#importing data set     
+dataset = pd.read_csv('Data.csv')
