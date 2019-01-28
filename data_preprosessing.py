@@ -9,3 +9,6 @@ import pandas as pd
 
 #importing data set     
 dataset = pd.read_csv('Data.csv')
+#selecting the first three columns
+X = dataset.iloc[:, :-1].values
+
