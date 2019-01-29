@@ -22,3 +22,6 @@ imputer = Imputer(missing_values = 'NaN' , strategy ='mean', axis =0)
 imputer.fit(X[:, 1:3])
 ### put it in the matrics
 X[:, 1:3] = imputer.transform(X[:, 1:3])
+
+#Encoding categorical data
+
