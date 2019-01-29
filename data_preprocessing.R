@@ -1,3 +1,9 @@
 # importing the adtaset
 
-datasets = read.csv('Data.csv')
+dataset = read.csv('Data.csv')
+
+#taking care of missing data
+dataset$Age = ifelse(is.na(dataset$Age),
+                     ave(dataset$Age, FUN = function(x) mean(x, na.rm = TRUE)),
+                     dataset$Age)
+
